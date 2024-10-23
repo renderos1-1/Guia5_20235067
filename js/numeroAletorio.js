@@ -26,9 +26,7 @@ function generarNumeroAleatorio() {
             El número oculto era: ${numeroAleatorio}. Refresque la página para volver a jugar.`;
 
         } else {
-            mensaje = `Vuelve a intentar. Quedan ${
-                numeroIntentos - intentos
-            } intentos`;
+            numero > numeroAleatorio ? mensaje = `El numero generado es menor. Quedan ${3 - intentos} intentos` : mensaje = `El numero generado es mayor. Quedan ${ 3 - intentos} intentos`;
         }
 
         //aumentamos el valor de los intentos
